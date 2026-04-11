@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.Sricharan Goud | Portfolio</title>
+    <!-- Modern Typography: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">SG<span>.</span></a>
+
+            <!-- Mobile Menu Toggle (Checkbox Hack for no-JS mobile menu) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-title">P.Sricharan Goud</h1>
+                <h2 class="hero-subtitle">Computer Science Student / Aspiring Software Developer</h2>
+                <p class="hero-tagline">
+                    Passionate about clean code, intuitive designs, and solving complex problems.
+                    I love turning ideas into elegant, real-world software solutions.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="my_resume (2).pdf" target="_blank" class="btn btn-outline" download>Download Resume</a>
+                </div>
+            </div>
+
+            <!-- Optional subtle decorative element -->
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section-bg-alt">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm P.Sricharan, a dedicated Computer Science student with a strong
+                            interest in Artificial Intelligence, Web Development, and algorithm design.
+                            My journey in tech started with a curiosity about how things work under the hood,
+                            which quickly grew into a passion for writing clean and efficient code.
+                        </p>
+                        <p>
+                            I thrive on tackling challenging problems and constantly exploring new technologies.
+                            Whether it's building responsive web applications or studying AI models,
+                            I'm always eager to learn, adapt, and build tools that make a difference.
+                        </p>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <img src="pintu.jpg" alt="P.Sricharan Goud" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3 class="skill-name">HTML & CSS</h3>
+                        <p class="skill-desc">Semantic structure and modern responsive design.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">☕</div>
+                        <h3 class="skill-name">Java</h3>
+                        <p class="skill-desc">Object-oriented programming and robust backend logic.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🐍</div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-desc">Data analysis, scripting, and exploring AI concepts.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🧩</div>
+                        <h3 class="skill-name">Problem Solving</h3>
+                        <p class="skill-desc">Algorithmic thinking and efficient code optimization.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h3 class="skill-name">Web Development</h3>
+                        <p class="skill-desc">Creating scalable and dynamic functional websites.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🛠️</div>
+                        <h3 class="skill-name">Github & Git</h3>
+                        <p class="skill-desc">Version control and modern development workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section-bg-alt">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <img src="project1.png" alt="AI Text-to-Image Generator" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">AI Text-to-Image Generator</h3>
+                            <p class="project-desc">A full-stack application leveraging local machine learning models to
+                                generate high-quality images from text prompts.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>React</span>
+                            </div>
+                            <a href="https://github.com/Sricharangoud/TEXT-TO-IMAGE-GENERATOR" class="btn btn-sm">View
+                                Project</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <img src="images.jpg" alt="Bone Fracture Detection" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Bone Fracture Detection</h3>
+                            <p class="project-desc">A robust RESTful API built to handle authentication, data
+                                persistence, and real-time task tracking for productivity apps.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>React</span>
+                            </div>
+                            <a href="https://github.com/Sricharangoud/Bone_Fracture_Detection" class="btn btn-sm">View
+                                Project</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <img src="3DGame.jpeg" alt="Rush Runner 3D" class="project-img">
+                        <div class="project-content">
+                            <h3 class="project-title">Rush_Runner_3D</h3>
+                            <p class="project-desc">A responsive and visually appealing personal portfolio showcasing
+                                HTML5 and CSS3 modern layout techniques and animations.</p>
+                            <div class="project-tags">
+                                <span>C#</span>
+                                <span>Unity</span>
+                                <span>3D Game</span>
+                            </div>
+                            <a href="https://github.com/Nitesh0112/RUSH-RUNNER-GAME" class="btn btn-sm">View Code</a>
+                            <a href="https://youtu.be/SHECRmQBCNM" class="btn btn-sm">view project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="certificates section-bg-alt">
+            <div class="container">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="cert-icon">🔷</div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">Azure AI Fundamentals (AI-900)</h3>
+                            <p class="cert-issuer">Microsoft</p>
+                            <a href="microsoft azure ai900.pdf" target="_blank" class="btn btn-sm"
+                                style="margin-top: 0.8rem; align-self: flex-start;">View Certificate</a>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <div class="cert-icon">🔶</div>
+                        <div class="cert-content">
+                            <h3 class="cert-title">AWS Machine Learning Certificate</h3>
+                            <p class="cert-issuer">Udacity</p>
+                            <a href="aws Certificate in udacity.pdf" target="_blank" class="btn btn-sm"
+                                style="margin-top: 0.8rem; align-self: flex-start;">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container contact-container">
+                <div class="contact-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-subtitle">I'm currently looking for new opportunities. Whether you have a question
+                        or just want to say hi, I'll try my best to get back to you!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <form class="contact-form" action="https://formsubmit.co/sricharangoud0608@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New message from your portfolio!">
+                        <input type="hidden" name="_next" value="http://localhost:8042"> <!-- Replace with your actual domain later -->
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Hello Sricharan..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <h3>Connect with me</h3>
+                        <p>Feel free to reach out through social platforms, by phone, or directly via email.</p>
+                        <div class="social-links">
+                            <a href="tel:+919542918814" class="social-btn">📞 +91 9542918814</a>
+                            <a href="mailto:sricharangoud0608@gmail.com" class="social-btn">📧
+                                sricharangoud0608@gmail.com</a>
+                            <a href="https://github.com/Sricharangoud" target="_blank" class="social-btn">💻 GitHub</a>
+                            <a href="https://www.linkedin.com/in/sricharan-goud-707b3729a/" target="_blank"
+                                class="social-btn">🔗 LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sricharan Goud. Built with HTML & CSS.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
