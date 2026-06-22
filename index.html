@@ -4,21 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>P.Sricharan Goud | Portfolio</title>
-    <!-- Modern Typography: Inter -->
+    <title>Pediripati Sricharan | Portfolio</title>
+    <!-- Plus Jakarta Sans Font for clean geometric UI -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header / Navbar -->
+    <!-- Floating Header / Navbar -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">SG<span>.</span></a>
+            <a href="#" class="logo">
+                <!-- SVG Icon Logo -->
+                <svg viewBox="0 0 24 24" width="28" height="28" style="color: var(--accent-color);">
+                    <path d="M4,4 H20 L12,12 L20,20 H4 L12,12 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                <span>PS.</span>
+            </a>
 
             <!-- Mobile Menu Toggle (Checkbox Hack for no-JS mobile menu) -->
             <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
@@ -33,9 +39,30 @@
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button class="theme-toggle-btn icon-btn" aria-label="Toggle theme" style="margin-left: 10px;">
+                            <!-- Sun icon -->
+                            <svg class="fi-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <!-- Moon icon -->
+                            <svg class="fi-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -44,169 +71,524 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero">
-            <div class="container hero-content">
-                <p class="hero-greeting">Hi, I'm</p>
-                <h1 class="hero-title">P.Sricharan Goud</h1>
-                <h2 class="hero-subtitle">Computer Science Student / Aspiring Software Developer</h2>
-                <p class="hero-tagline">
-                    Passionate about clean code, intuitive designs, and solving complex problems.
-                    I love turning ideas into elegant, real-world software solutions.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="my_resume (2).pdf" target="_blank" class="btn btn-outline" download>Download Resume</a>
+            <div class="container hero-grid-content">
+                
+                <!-- Hero Left Column -->
+                <div class="hero-left-column">
+                    <div class="speech-bubble">
+                        <span class="bubble-dot" style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background-color: var(--accent-color); margin-right: 6px; animation: pulse 1.5s infinite;"></span>
+                        Hyderabad, India
+                    </div>
+                    
+                    <h1 class="hero-quote-tag">
+                        Hello! I Am <br>
+                        <span class="highlight-circled">
+                            Pediripati Sricharan
+                            <!-- Circular hand drawn effect -->
+                            <svg class="hand-drawn-circle" viewBox="0 0 500 150">
+                                <path d="M10,80 Q250,150 490,80 Q250,10 10,80" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                    </h1>
+                    
+                    <h2 class="hero-role-title">Full Stack Developer | AI/ML Enthusiast</h2>
+                    
+                    <p class="hero-desc-para">
+                        Passionate Computer Science student specializing in Full Stack Development and Artificial Intelligence. Experienced in building scalable web applications and machine learning solutions.
+                    </p>
+                    
+                    <div class="hero-actions" style="display: flex; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 3.5rem;">
+                        <a href="https://drive.google.com/file/d/1u1U1nCJ9X2JLHDqS6uqegx2w5wJZQvdx/view?usp=sharing" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <!-- Open External Icon -->
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            View Resume
+                        </a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
+                    </div>
+                    
+                    <div class="hero-footer-grid" style="align-items: center;">
+                        <div class="footer-grid-col">
+                            <span class="grid-title">CONNECT WITH ME</span>
+                            <div class="icon-group">
+                                <a href="https://www.linkedin.com/in/sricharan-goud-707b3729a/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LinkedIn">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                </a>
+                                <a href="https://github.com/Sricharangoud" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub">
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                </a>
+                                <a href="https://leetcode.com/u/9542918814/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LeetCode">
+                                    <!-- Custom LeetCode icon -->
+                                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.414l-9.777 9.778a1.375 1.375 0 0 0 0 1.942l4.885 4.885a1.375 1.375 0 0 0 1.942 0l9.778-9.777a1.375 1.375 0 0 0 0-1.942L14.444.414A1.374 1.374 0 0 0 13.483 0zm-.03 2.285 3.86 3.859-9.778 9.778-3.86-3.86 9.778-9.777zm.03 2.285L9.624 8.428H19.53a1.374 1.374 0 0 1 1.374 1.374v3.435a1.374 1.374 0 0 1-1.374 1.374H9.624l3.859 3.86-2.428 2.428-4.885-4.885a1.375 1.375 0 0 1 0-1.942l4.885-4.885 2.428 2.428z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- Hero Right Column -->
+                <div class="hero-right-column" style="position: relative; display: flex; justify-content: center;">
+                    <div class="avatar-glow-wrapper">
+                        <div class="avatar-img-box">
+                            <!-- User specified image centered vertically -->
+                            <img src="pintu.jpeg" alt="Pediripati Sricharan" style="object-position: center;">
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Optional subtle decorative element -->
+            <!-- Glowing Decorative Background Orbs -->
             <div class="glow-orb orb-1"></div>
             <div class="glow-orb orb-2"></div>
         </section>
 
-        <!-- About Me Section -->
+        <!-- Biography / About Me Section -->
         <section id="about" class="about section-bg-alt">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
+                <div class="text-center" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="section-subtitle-small">BIOGRAPHY</span>
+                    <h2 class="section-title-large">About Me</h2>
+                </div>
+
                 <div class="about-grid">
-                    <div class="about-text">
-                        <p>
-                            Hello! I'm P.Sricharan, a dedicated Computer Science student with a strong
-                            interest in Artificial Intelligence, Web Development, and algorithm design.
-                            My journey in tech started with a curiosity about how things work under the hood,
-                            which quickly grew into a passion for writing clean and efficient code.
-                        </p>
-                        <p>
-                            I thrive on tackling challenging problems and constantly exploring new technologies.
-                            Whether it's building responsive web applications or studying AI models,
-                            I'm always eager to learn, adapt, and build tools that make a difference.
-                        </p>
-                    </div>
+                    <!-- About Left: Portrait -->
                     <div class="about-image-wrapper">
-                        <img src="pintu.jpg" alt="P.Sricharan Goud" class="profile-img">
+                        <div class="about-img-container">
+                            <img src="pintu.jpeg" alt="Pediripati Sricharan" style="object-position: center;">
+                        </div>
+                    </div>
+
+                    <!-- About Right: Biography Details & Education -->
+                    <div class="about-text">
+                        <!-- Custom styled education card -->
+                        <div class="education-card">
+                            <h3 class="education-card-title">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                                Education History
+                            </h3>
+                            
+                            <div class="education-timeline">
+                                <div class="edu-item">
+                                    <div class="edu-marker marker-active"></div>
+                                    <div class="edu-info">
+                                        <h4 class="edu-degree">B.Tech in Computer Science & Engineering</h4>
+                                        <p class="edu-meta">SR University | 2023–2027</p>
+                                    </div>
+                                </div>
+                                <div class="edu-item">
+                                    <div class="edu-marker"></div>
+                                    <div class="edu-info">
+                                        <h4 class="edu-degree">Intermediate Education</h4>
+                                        <p class="edu-meta">Chaitanya Junior College | 2021–2023</p>
+                                        <p class="edu-location">Shamshabad, Telangana</p>
+                                    </div>
+                                </div>
+                                <div class="edu-item">
+                                    <div class="edu-marker"></div>
+                                    <div class="edu-info">
+                                        <h4 class="edu-degree">Secondary School Certificate (SSC)</h4>
+                                        <p class="edu-meta">Sri Shivaji Vidya Peeth High School | Passed 2021</p>
+                                        <p class="edu-location">Thondupally, Shamshabad</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="margin-top: 2rem;">
+                            I am a passionate software developer who enjoys building innovative web applications and AI-powered solutions. My interests include Full Stack Development, Machine Learning, Deep Learning, and Algorithmic Problem Solving.
+                        </p>
+                        
+                        <div class="about-action-btn-wrapper">
+                            <a href="#" class="btn btn-outline view-resume-btn">View Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="glow-orb orb-3"></div>
+        </section>
+
+        <!-- Tech Orbit Widget Section -->
+        <section class="tech-orbit-section">
+            <div class="container orbit-container">
+                <span class="section-subtitle-small">EXPERTISE MATRIX</span>
+                <p class="orbit-intro-text">
+                    Specializing in building <span>robust full-stack systems</span> and exploring state-of-the-art <span>AI and deep learning algorithms</span>.
+                </p>
+
+                <!-- Rotating Orbit Widget -->
+                <div class="orbit-widget-wrapper">
+                    <div class="orbit-track animate-orbit">
+                        <!-- Orbit Nodes (8 items) -->
+                        <div class="orbit-item item-1" title="HTML5">🌐</div>
+                        <div class="orbit-item item-2" title="CSS3">🎨</div>
+                        <div class="orbit-item item-3" title="JavaScript">⚡</div>
+                        <div class="orbit-item item-4" title="React.js">⚛️</div>
+                        <div class="orbit-item item-5" title="Java">☕</div>
+                        <div class="orbit-item item-6" title="Python">🐍</div>
+                        <div class="orbit-item item-7" title="MySQL">🗄️</div>
+                        <div class="orbit-item item-8" title="Git">🛠️</div>
+                    </div>
+                    <!-- Core center node -->
+                    <div class="orbit-center-node animate-counter-orbit">
+                        <span class="center-logo">CSE</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
+        <!-- Technical Skills matrix -->
+        <section id="skills" class="skills section-bg-alt">
             <div class="container">
-                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="text-center" style="text-align: center; margin-bottom: 5rem;">
+                    <span class="section-subtitle-small">EXPERTISE MATRIX</span>
+                    <h2 class="section-title-large">Technical Skills</h2>
+                </div>
+
                 <div class="skills-grid">
+                    <!-- Frontend -->
                     <div class="skill-card">
-                        <div class="skill-icon">🌐</div>
-                        <h3 class="skill-name">HTML & CSS</h3>
-                        <p class="skill-desc">Semantic structure and modern responsive design.</p>
+                        <div class="skill-card-header">
+                            <h3 class="skill-name">Frontend Development</h3>
+                            <span class="skills-count">4 Assets</span>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>HTML5</span> <span>95%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="95"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>CSS3</span> <span>90%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="90"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>JavaScript</span> <span>85%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="85"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>React.js</span> <span>80%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="80"></div></div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Backend -->
                     <div class="skill-card">
-                        <div class="skill-icon">☕</div>
-                        <h3 class="skill-name">Java</h3>
-                        <p class="skill-desc">Object-oriented programming and robust backend logic.</p>
+                        <div class="skill-card-header">
+                            <h3 class="skill-name">Backend Development</h3>
+                            <span class="skills-count">4 Assets</span>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Node.js</span> <span>75%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="75"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Flask</span> <span>70%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="70"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Spring Boot</span> <span>65%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="65"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>REST APIs</span> <span>85%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="85"></div></div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Languages -->
                     <div class="skill-card">
-                        <div class="skill-icon">🐍</div>
-                        <h3 class="skill-name">Python</h3>
-                        <p class="skill-desc">Data analysis, scripting, and exploring AI concepts.</p>
+                        <div class="skill-card-header">
+                            <h3 class="skill-name">Programming Languages</h3>
+                            <span class="skills-count">3 Assets</span>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Java</span> <span>85%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="85"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Python</span> <span>90%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="90"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>SQL</span> <span>80%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="80"></div></div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Databases -->
                     <div class="skill-card">
-                        <div class="skill-icon">🧩</div>
-                        <h3 class="skill-name">Problem Solving</h3>
-                        <p class="skill-desc">Algorithmic thinking and efficient code optimization.</p>
+                        <div class="skill-card-header">
+                            <h3 class="skill-name">Databases</h3>
+                            <span class="skills-count">2 Assets</span>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>MySQL</span> <span>80%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="80"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>MongoDB</span> <span>75%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="75"></div></div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- AI/ML -->
                     <div class="skill-card">
-                        <div class="skill-icon">💻</div>
-                        <h3 class="skill-name">Web Development</h3>
-                        <p class="skill-desc">Creating scalable and dynamic functional websites.</p>
+                        <div class="skill-card-header">
+                            <h3 class="skill-name">Artificial Intelligence & ML</h3>
+                            <span class="skills-count">5 Assets</span>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>TensorFlow</span> <span>85%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="85"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Keras</span> <span>80%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="80"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Scikit-Learn</span> <span>85%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="85"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>CNN (Convolutional Networks)</span> <span>80%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="80"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>GANs (Generative Adversarial Nets)</span> <span>70%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="70"></div></div>
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Tools & Core CS -->
                     <div class="skill-card">
-                        <div class="skill-icon">🛠️</div>
-                        <h3 class="skill-name">Github & Git</h3>
-                        <p class="skill-desc">Version control and modern development workflows.</p>
+                        <div class="skill-card-header">
+                            <h3 class="skill-name">Tools & Core CS</h3>
+                            <span class="skills-count">4 Assets</span>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Git & GitHub</span> <span>88%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="88"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>VS Code & Notebooks</span> <span>95%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="95"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>Data Structures & Alg.</span> <span>85%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="85"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-meta"><span>OOP & DBMS Concepts</span> <span>90%</span></div>
+                                <div class="progress-bar-container"><div class="skill-progress-bar" data-percentage="90"></div></div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            
+            <div class="glow-orb orb-4"></div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="skills" style="padding-top: 6rem; padding-bottom: 6rem;">
+            <div class="container">
+                <div class="text-center" style="text-align: center; margin-bottom: 5rem;">
+                    <span class="section-subtitle-small">CAREER PATH</span>
+                    <h2 class="section-title-large">Work Experience</h2>
+                </div>
+
+                <div class="experience-timeline-container" style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 2.5rem;">
+                    
+                    <!-- Experience 1 -->
+                    <div class="experience-card-item">
+                        <div class="exp-icon-box">💼</div>
+                        <div class="exp-content-box">
+                            <div class="exp-header-row">
+                                <h3 class="exp-job-title">Java Full Stack Developer Intern</h3>
+                                <span class="exp-date-badge">🗓️ Jan 2026 – Mar 2026</span>
+                            </div>
+                            <div class="exp-company-sub">🏢 EduSkills (Remote)</div>
+                            <ul class="exp-details-list">
+                                <li>Developed full-stack applications using Java, Spring Boot, React.js, and MySQL.</li>
+                                <li>Built RESTful APIs and CRUD operations.</li>
+                                <li>Improved application performance through optimized SQL queries.</li>
+                                <li>Used Git/GitHub for version control and collaborating on code bases.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="experience-card-item">
+                        <div class="exp-icon-box">💼</div>
+                        <div class="exp-content-box">
+                            <div class="exp-header-row">
+                                <h3 class="exp-job-title">AI/ML Intern</h3>
+                                <span class="exp-date-badge">🗓️ Jul 2024 – Sep 2024</span>
+                            </div>
+                            <div class="exp-company-sub">🏢 EduSkills (Remote)</div>
+                            <ul class="exp-details-list">
+                                <li>Built Machine Learning and Deep Learning models from scratch.</li>
+                                <li>Worked with TensorFlow, Keras, Flask, and Scikit-learn.</li>
+                                <li>Developed AI-powered web applications and deployed backends.</li>
+                                <li>Improved prediction accuracy through feature engineering and hyperparameter tuning.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Featured Projects Section -->
         <section id="projects" class="projects section-bg-alt">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
+                <div class="text-center" style="text-align: center; margin-bottom: 5rem;">
+                    <span class="section-subtitle-small">ASSET CASE STUDIES</span>
+                    <h2 class="section-title-large">Featured Projects</h2>
+                </div>
+
                 <div class="projects-grid">
                     <!-- Project 1 -->
                     <article class="project-card">
-                        <img src="project1.png" alt="AI Text-to-Image Generator" class="project-img">
-                        <div class="project-content">
-                            <h3 class="project-title">AI Text-to-Image Generator</h3>
-                            <p class="project-desc">A full-stack application leveraging local machine learning models to
-                                generate high-quality images from text prompts.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>FastAPI</span>
-                                <span>React</span>
+                        <div class="project-img-wrapper" style="position: relative;">
+                            <!-- Hover action buttons overlay -->
+                            <div class="project-hover-overlay">
+                                <a href="https://github.com/Sricharangoud/Movie-World" target="_blank" rel="noopener noreferrer" class="btn btn-sm hover-overlay-btn">Code Source</a>
+                                <a href="https://movie-world-blush.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm hover-overlay-btn btn-primary-overlay">Launch Demo</a>
                             </div>
-                            <a href="https://github.com/Sricharangoud/TEXT-TO-IMAGE-GENERATOR" class="btn btn-sm">View
-                                Project</a>
+                            <img src="movie_world_preview.png" alt="Movie World" class="project-img" style="object-fit: cover;">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-card-header">
+                                <span class="project-category">MERN Stack</span>
+                                <span class="project-like-count">May 2026</span>
+                            </div>
+                            <h3 class="project-title">
+                                <a href="https://movie-world-blush.vercel.app/" target="_blank" rel="noopener noreferrer">Movie World</a>
+                                <span class="arrow-up">↗</span>
+                            </h3>
+                            <p class="project-desc" style="margin-bottom: 1.5rem;">
+                                A full-stack movie streaming and discovery platform. Built RESTful APIs, dynanmic movie data handlers, search filters, and custom dashboards.
+                            </p>
+                            <div class="project-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <span class="tag-badge">React.js</span>
+                                <span class="tag-badge">Node.js</span>
+                                <span class="tag-badge">MongoDB</span>
+                                <span class="tag-badge">APIs</span>
+                            </div>
                         </div>
                     </article>
 
                     <!-- Project 2 -->
                     <article class="project-card">
-                        <img src="images.jpg" alt="Bone Fracture Detection" class="project-img">
-                        <div class="project-content">
-                            <h3 class="project-title">Bone Fracture Detection</h3>
-                            <p class="project-desc">A robust RESTful API built to handle authentication, data
-                                persistence, and real-time task tracking for productivity apps.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>FastAPI</span>
-                                <span>React</span>
+                        <div class="project-img-wrapper" style="position: relative;">
+                            <div class="project-hover-overlay">
+                                <a href="https://github.com/Sricharangoud/Bone-Fracture_detection" target="_blank" rel="noopener noreferrer" class="btn btn-sm hover-overlay-btn">Code Source</a>
+                                <a href="https://bone-fracture-detection-5ivv.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm hover-overlay-btn btn-primary-overlay">Launch Demo</a>
                             </div>
-                            <a href="https://github.com/Sricharangoud/Bone_Fracture_Detection" class="btn btn-sm">View
-                                Project</a>
+                            <!-- Updated to user custom images.jpg -->
+                            <img src="images.jpg" alt="Bone Fracture Detection" class="project-img" style="object-fit: cover;">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-card-header">
+                                <span class="project-category">Deep Learning</span>
+                                <span class="project-like-count">Dec 2025</span>
+                            </div>
+                            <h3 class="project-title">
+                                <a href="https://bone-fracture-detection-5ivv.vercel.app/" target="_blank" rel="noopener noreferrer">Bone Fracture Detection</a>
+                                <span class="arrow-up">↗</span>
+                            </h3>
+                            <p class="project-desc" style="margin-bottom: 1.5rem;">
+                                A CNN-based medical image processing application designed to detect bone fractures from X-ray scans with a 92% evaluation accuracy.
+                            </p>
+                            <div class="project-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                                <span class="tag-badge">Python</span>
+                                <span class="tag-badge">TensorFlow</span>
+                                <span class="tag-badge">CNN</span>
+                                <span class="tag-badge">Flask</span>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- Project 3 -->
-                    <article class="project-card">
-                        <img src="3DGame.jpeg" alt="Rush Runner 3D" class="project-img">
-                        <div class="project-content">
-                            <h3 class="project-title">Rush_Runner_3D</h3>
-                            <p class="project-desc">A responsive and visually appealing personal portfolio showcasing
-                                HTML5 and CSS3 modern layout techniques and animations.</p>
-                            <div class="project-tags">
-                                <span>C#</span>
-                                <span>Unity</span>
-                                <span>3D Game</span>
-                            </div>
-                            <a href="https://github.com/Nitesh0112/RUSH-RUNNER-GAME" class="btn btn-sm">View Code</a>
-                            <a href="https://youtu.be/SHECRmQBCNM" class="btn btn-sm">view project</a>
-                        </div>
-                    </article>
                 </div>
             </div>
+            
+            <div class="glow-orb orb-5"></div>
         </section>
 
-        <!-- Certificates Section -->
-        <section id="certificates" class="certificates section-bg-alt">
+        <!-- Verified Certificates Section -->
+        <section id="certificates" class="certificates">
             <div class="container">
-                <h2 class="section-title">Certificates</h2>
+                <div class="text-center" style="text-align: center; margin-bottom: 5rem;">
+                    <span class="section-subtitle-small">AUDITED CREDENTIALS</span>
+                    <h2 class="section-title-large">Verified Certifications</h2>
+                </div>
+
                 <div class="certificates-grid">
+                    <!-- Cert 1 -->
                     <div class="certificate-card">
-                        <div class="cert-icon">🔷</div>
+                        <div class="cert-icon">🥇</div>
                         <div class="cert-content">
-                            <h3 class="cert-title">Azure AI Fundamentals (AI-900)</h3>
+                            <span class="cert-code">SEC-AI900</span>
+                            <h3 class="cert-title">Microsoft Certified: Azure AI Fundamentals (AI-900)</h3>
                             <p class="cert-issuer">Microsoft</p>
-                            <a href="microsoft azure ai900.pdf" target="_blank" class="btn btn-sm"
-                                style="margin-top: 0.8rem; align-self: flex-start;">View Certificate</a>
+                            <a href="https://drive.google.com/file/d/1MDSPeF1T1i54YsfpEoQwNEX2zow7i2ks/view?usp=drive_link" target="_blank" class="cert-btn btn btn-sm">Verify Link</a>
                         </div>
                     </div>
+
+
+                    <!-- Cert 3 -->
                     <div class="certificate-card">
-                        <div class="cert-icon">🔶</div>
+                        <div class="cert-icon">🥇</div>
                         <div class="cert-content">
-                            <h3 class="cert-title">AWS Machine Learning Certificate</h3>
-                            <p class="cert-issuer">Udacity</p>
-                            <a href="aws Certificate in udacity.pdf" target="_blank" class="btn btn-sm"
-                                style="margin-top: 0.8rem; align-self: flex-start;">View Certificate</a>
+                            <span class="cert-code">SEC-JFS-INTERN</span>
+                            <h3 class="cert-title">Java Full Stack Developer Intern</h3>
+                            <p class="cert-issuer">EduSkills Academy</p>
+                            <a href="https://drive.google.com/file/d/1b8zwm0hK-CEjJzHprdpwjBZjqCE0fZos/view?usp=drive_link" target="_blank" class="cert-btn btn btn-sm">Verify Link</a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="certificate-card">
+                        <div class="cert-icon">🥇</div>
+                        <div class="cert-content">
+                            <span class="cert-code">SEC-AIML-INTERN</span>
+                            <h3 class="cert-title">AI/ML Internship Certification</h3>
+                            <p class="cert-issuer">EduSkills Academy</p>
+                            <a href="https://drive.google.com/file/d/1kmw4mh4pQ1dnprTepfTiMcvHP_CmmghT/view?usp=drive_link" target="_blank" class="cert-btn btn btn-sm">Verify Link</a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="certificate-card">
+                        <div class="cert-icon">🥇</div>
+                        <div class="cert-content">
+                            <span class="cert-code">AWARD-EXPO23</span>
+                            <h3 class="cert-title">Project Expo 2023 – 3rd Place</h3>
+                            <p class="cert-issuer">Academic Engineering Panel</p>
+                            <a href="https://drive.google.com/file/d/1ZPkLYbtioS3qrI83VwfT_QiKhN2jSTmk/view?usp=drive_link" target="_blank" class="cert-btn btn btn-sm">Verify Link</a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 6 -->
+                    <div class="certificate-card">
+                        <div class="cert-icon">🥇</div>
+                        <div class="cert-content">
+                            <span class="cert-code">COMP-UDBHAVA26</span>
+                            <h3 class="cert-title">UDBHAVA X'26 Hackathon</h3>
+                            <p class="cert-issuer">Hackathon Engineering Panel</p>
+                            <a href="https://drive.google.com/file/d/1cgjEctm04oSAd2z_3pcnPx1fg6rCyAZx/view?usp=sharing" target="_blank" class="cert-btn btn btn-sm">Verify Link</a>
                         </div>
                     </div>
                 </div>
@@ -214,58 +596,121 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container contact-container">
-                <div class="contact-header">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="contact-subtitle">I'm currently looking for new opportunities. Whether you have a question
-                        or just want to say hi, I'll try my best to get back to you!</p>
+        <section id="contact" class="contact section-bg-alt">
+            <div class="container">
+                <div class="text-center" style="text-align: center; margin-bottom: 5rem;">
+                    <span class="section-subtitle-small">OPEN AN INQUIRY</span>
+                    <h2 class="section-title-large">Contact Section</h2>
                 </div>
 
                 <div class="contact-grid">
-                    <form class="contact-form" action="https://formsubmit.co/sricharangoud0608@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="New message from your portfolio!">
-                        <input type="hidden" name="_next" value="http://localhost:8042"> <!-- Replace with your actual domain later -->
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                    <!-- Left: Contact Details Card -->
+                    <div class="contact-info-card">
+                        <div class="contact-img-wrapper" style="aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; margin-bottom: 2rem;">
+                            <!-- Styled to fit perfectly without cutoffs -->
+                            <img src="pintu.jpeg" alt="Pediripati Sricharan" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="john@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required
-                                placeholder="Hello Sricharan..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
-                    </form>
+                        <div class="contact-info-content">
+                            <h3 class="contact-name">Pediripati Sricharan</h3>
+                            <p class="contact-role">Full Stack Developer | AI/ML Engineer</p>
+                            <p class="contact-description">
+                                I am available for internship positions, freelance contracts, or full-stack software inquiries. Reach out directly using the options below.
+                            </p>
+                            
+                            <div class="contact-details">
+                                <div class="detail-item" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                    <div class="icon-badge-round" style="width: 42px; height: 42px; border-radius: 10px; background: rgba(168, 85, 247, 0.1); display: flex; align-items: center; justify-content: center; color: var(--accent-color);">📧</div>
+                                    <div>
+                                        <div style="font-size: 0.7rem; color: var(--text-secondary); letter-spacing: 0.5px;">EMAIL ADDRESS</div>
+                                        <a href="mailto:sricharangoud0608@gmail.com">sricharangoud0608@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="detail-item" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                    <div class="icon-badge-round" style="width: 42px; height: 42px; border-radius: 10px; background: rgba(168, 85, 247, 0.1); display: flex; align-items: center; justify-content: center; color: var(--accent-color);">📞</div>
+                                    <div>
+                                        <div style="font-size: 0.7rem; color: var(--text-secondary); letter-spacing: 0.5px;">TELEPHONE NETWORK</div>
+                                        <a href="tel:+919542918814">+91 9542918814</a>
+                                    </div>
+                                </div>
+                                <div class="detail-item" style="display: flex; align-items: center; gap: 1rem;">
+                                    <div class="icon-badge-round" style="width: 42px; height: 42px; border-radius: 10px; background: rgba(168, 85, 247, 0.1); display: flex; align-items: center; justify-content: center; color: var(--accent-color);">📍</div>
+                                    <div>
+                                        <div style="font-size: 0.7rem; color: var(--text-secondary); letter-spacing: 0.5px;">LOCATION NODE</div>
+                                        <a href="https://maps.google.com/?q=Hyderabad,India" target="_blank" rel="noopener noreferrer">Hyderabad, India</a>
+                                    </div>
+                                </div>
+                            </div>
 
-                    <div class="contact-info">
-                        <h3>Connect with me</h3>
-                        <p>Feel free to reach out through social platforms, by phone, or directly via email.</p>
-                        <div class="social-links">
-                            <a href="tel:+919542918814" class="social-btn">📞 +91 9542918814</a>
-                            <a href="mailto:sricharangoud0608@gmail.com" class="social-btn">📧
-                                sricharangoud0608@gmail.com</a>
-                            <a href="https://github.com/Sricharangoud" target="_blank" class="social-btn">💻 GitHub</a>
-                            <a href="https://www.linkedin.com/in/sricharan-goud-707b3729a/" target="_blank"
-                                class="social-btn">🔗 LinkedIn</a>
+                            <div class="contact-socials-group">
+                                <span class="social-title">SOCIAL LOGS</span>
+                                <div class="social-icons">
+                                    <a href="https://www.linkedin.com/in/sricharan-goud-707b3729a/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LinkedIn">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                    </a>
+                                    <a href="https://github.com/Sricharangoud" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    </a>
+                                    <a href="https://leetcode.com/u/9542918814/" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LeetCode">
+                                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.414l-9.777 9.778a1.375 1.375 0 0 0 0 1.942l4.885 4.885a1.375 1.375 0 0 0 1.942 0l9.778-9.777a1.375 1.375 0 0 0 0-1.942L14.444.414A1.374 1.374 0 0 0 13.483 0zm-.03 2.285 3.86 3.859-9.778 9.778-3.86-3.86 9.778-9.777zm.03 2.285L9.624 8.428H19.53a1.374 1.374 0 0 1 1.374 1.374v3.435a1.374 1.374 0 0 1-1.374 1.374H9.624l3.859 3.86-2.428 2.428-4.885-4.885a1.375 1.375 0 0 1 0-1.942l4.885-4.885 2.428 2.428z"/></svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+
+                    <!-- Right: Contact Form Card -->
+                    <div class="contact-form-card">
+                        <form id="contactForm">
+                            <div class="form-row">
+                                <div class="half-width form-group">
+                                    <label for="name">YOUR NAME</label>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="half-width form-group">
+                                    <label for="email">EMAIL ADDRESS</label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">CONTRACT MESSAGE</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="State internship parameters, project details, or other inquiries..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
+                        </form>
                     </div>
                 </div>
             </div>
+            
+            <div class="glow-orb orb-6"></div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Sricharan Goud. Built with HTML & CSS.</p>
+            <p>&copy; 2026 Pediripati Sricharan Goud. Built with HTML & CSS.</p>
         </div>
     </footer>
 
+    <!-- Resume Viewer Modal Overlay -->
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 class="modal-title">My Curriculum Vitae</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://drive.google.com/file/d/1u1U1nCJ9X2JLHDqS6uqegx2w5wJZQvdx/preview" class="resume-iframe"></iframe>
+            </div>
+            <div class="modal-footer">
+                <a href="https://drive.google.com/file/d/1u1U1nCJ9X2JLHDqS6uqegx2w5wJZQvdx/view?usp=sharing" target="_blank" class="btn btn-primary">Open in Drive</a>
+                <button class="btn btn-outline modal-close">Close Viewer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vanilla Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>
