@@ -73,8 +73,8 @@ You can view the live portfolio here:
 
 - GitHub: https://github.com/sricharangoud
 - Portfolio: https://sricharangoud.github.io/Personal_Portfolio/
-- LinkedIn: *(Add your LinkedIn profile URL here)*
-- Email: *(Add your email address here)*
+- LinkedIn: https://www.linkedin.com/in/sricharan-goud-707b3729a/
+- Email: sricharangoud0608@gmail.com
 
 ---
 
@@ -83,7 +83,3 @@ You can view the live portfolio here:
 If you like this project, consider giving it a ⭐ on GitHub.
 
 ---
-
-## 📄 License
-
-This project is licensed under the MIT License.
