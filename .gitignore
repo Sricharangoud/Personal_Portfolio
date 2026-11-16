@@ -1,0 +1,9 @@
+# Node & build
+node_modules/
+dist/
+.DS_Store
+
+# Tool & skill workspace artifacts
+.agents/
+unslop/
+*.log
